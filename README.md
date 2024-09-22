@@ -19,9 +19,9 @@ The input file (`INPUT.txt`) must contain a single line of comma-separated value
 3. **HDD - Hypocentral Depth Ratio**: must be chosen consistent with the fault style:
    | Style of Fault (SoF) |    *Italy*    |  *California* | *Great Basin* |    *Taiwan*   |    *Japan*    | *New Zealand* |  *Aggregates* |
    |----------------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|
-   | *if* SoF = 3  → HDD  |     `ITA_N`    |              |      `GB_N`   |               |               |               |     `AGG_N`   |
-   | *if* SoF = 4  → HDD  |     `ITA_R`    |              |               |     `TAI_R`   |     `JAP_R`   |               |     `AGG_R`   |
-   | *if* SoF = 5  → HDD  |               |     `CA_S`    |               |               |     `JAP_S`   |      `NZ_S`   |     `AGG_S`   |  
+   | *if* SoF=3 → HDD  |     `ITA_N`    |              |      `GB_N`   |               |               |               |     `AGG_N`   |
+   | *if* SoF=4 → HDD  |     `ITA_R`    |              |               |     `TAI_R`   |     `JAP_R`   |               |     `AGG_R`   |
+   | *if* SoF=5 → HDD  |               |     `CA_S`    |               |               |     `JAP_S`   |      `NZ_S`   |     `AGG_S`   |  
 
 4. **dip_mu**: Mean fault dip angle calculated using a normal (Gaussian) distribution. (e.g, 40° for reverse fault)
 
@@ -50,17 +50,17 @@ The input file (`INPUT.txt`) must contain a single line of comma-separated value
    ```
    **Option 2**: Alternatively, open the script in MATLAB and click the Run button (green play button) in the editor.
 
+3. **Figure 6** will display the CPSR curve.
 ___________________________________________________________
-### Note: 
-- Abbreviation in point 1: L14 refers to MSR by *[Leonard (2014)](https://doi.org/10.1785/0120140087)* for Interplate or Intraplate (stable continental region); T17 refert to MSR by *[Thingbaijam et al. (2017)](https://doi.org/10.1785/0120170017)*.
+### Note  
+- Abbreviation in point 1: L14 refers to MSR by [Leonard (2014)](https://doi.org/10.1785/0120140087) for Interplate or Intraplate (stable continental region); T17 refert to MSR by [Thingbaijam et al. (2017)](https://doi.org/10.1785/0120170017).
 
 - String values listed in point 3 (e.g., ITA_N, GB_N, AGG_R, etc.) are associated with the corresponding numerical values of HDD derived from the research. For detailed information on these values, please refer to **Table 1** in *Mammarella et al. (2024) Supplementary Materials.*
 ___________________________________________________________
-## License  
-This project is licensed under the BSD 3-Clause License. See the [LICENSE](https://github.com/MammarellaLisa/CPSR/blob/main/LICENSE) file for details.
 
-## Reference  
+### Reference  
 Leonard, M. (2014) Self-consistent earthquake fault-scaling relations: Update and extension to stable continental strike-slip faults. Bulletin of the Seismological Society of America, 104 (6): 2953–2965. doi:10.1785/0120140087.  
+
 Thingbaijam, K.K.S., Mai, P.M. and Goda, K. (2017) New empirical earthquake source-scaling laws. Bulletin of the Seismological Society of America, 107 (5): 2225–2246. doi:10.1785/0120170017.  
 
 
