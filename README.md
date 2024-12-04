@@ -1,5 +1,7 @@
 # Conditional Probability of Surface Rupture - CPSR
 Source code for the CPSR described in *Mammarella et al. (2024)*  
+[![DOI](https://img.shields.io/badge/DOI-10.1177%2F87552930241293570-yellow)](https://doi.org/10.1177/87552930241293570)
+
 
 This repository contains a MATLAB script that calculates the conditional probability of surface rupture (CPSR) based on specific input values. The input values must be provided in a separate text file (`INPUT.txt`) located in the same directory. 
 
@@ -44,18 +46,20 @@ The input file (`INPUT.txt`) must contain a single line of comma-separated value
 
 1. Open MATLAB and navigate to the directory containing the script and `INPUT.txt`.
 2. **Option 1**: Run the script from the MATLAB command window:
-
    ```matlab
    run('CPSR.m')
    ```
-   **Option 2**: Alternatively, open the script in MATLAB and click the Run button (green play button) in the editor.
-
-3. **Figure 6** will display the CPSR curve.
+ 3. **Figure 6** will display the CPSR curve.
 ___________________________________________________________
-### Note  
-- Abbreviation in point 1: L14 refers to MSR by [Leonard (2014)](https://doi.org/10.1785/0120140087) for Interplate or Intraplate (stable continental region); T17 refert to MSR by [Thingbaijam et al. (2017)](https://doi.org/10.1785/0120170017).
+<h3 style="display: flex; align-items: center;">
+  <span style="color: magenta; font-weight: bold;">❗</span>
+  <span style="color: red; font-weight: bold; margin-left: 8px;">Note</span>
+</h3>
+ 
+- L14 refers to MSR by [Leonard (2014)](https://doi.org/10.1785/0120140087) for Interplate or Intraplate (stable continental region);
+- T17 refert to MSR by [Thingbaijam et al. (2017)](https://doi.org/10.1785/0120170017).
 
-- String values listed in point 3 (e.g., ITA_N, GB_N, AGG_R, etc.) are associated with the corresponding numerical values of HDD derived from the research. For detailed information on these values, please refer to **Table 1** in *Mammarella et al. (2024) Supplementary Materials.*
+- String values (e.g., ITA_N, GB_N, AGG_R, etc.) are linked to the corresponding HDD numerical values from the research. For details, see **Table 1** in the *Supplementary Materials.*
 ___________________________________________________________
 
 ### Reference  
